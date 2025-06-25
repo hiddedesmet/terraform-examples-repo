@@ -1,0 +1,24 @@
+# Example values for enum-like variables
+# Copy this file to terraform.tfvars and modify values as needed
+
+# Environment settings
+environment = "dev"  # Options: dev, test, staging, prod
+
+# Infrastructure sizing
+vm_size      = "Standard_B2s"     # Options: Standard_B1s, Standard_B2s, Standard_B4ms, Standard_D2s_v3, Standard_D4s_v3, Standard_F2s_v2, Standard_F4s_v2
+database_tier = "standard"        # Options: basic, standard, premium
+
+# Security configuration
+security_level = "medium"         # Options: low, medium, high, critical
+
+# Deployment strategy
+deployment_strategy = "rolling"   # Options: blue-green, rolling, canary, recreate
+
+# Storage configuration
+storage_replication = "LRS"       # Options: LRS, GRS, RAGRS, ZRS, GZRS, RAGZRS
+
+# Regional deployment
+azure_region = "westeurope"       # Options: westeurope, northeurope, eastus, westus2, southeastasia
+
+# Monitoring configuration
+monitoring_level = "standard"     # Options: none, basic, standard, advanced
